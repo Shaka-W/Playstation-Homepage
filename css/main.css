@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1300px; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+}
+
+.accent {
+    color: #0070cc;
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.col-title {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+/* Button Styles */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    color: #fff;
+    font-weight: bold;
+    background-color: #0070cc;
+    padding: 0.5rem 1.2rem;
+}
+
+.btn-secondary {
+    background-color: #cd3d0f;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 1.3rem;
+}
+
+/* Navigation */
+.mobile-nav {
+    display: none;
+}
+
+.ps-logo {
+    height: 30px;
+    margin-right: 1.5rem;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.main-nav-items {
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-nav-item {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #0070cc;
+}
+
+.btn-sign-in {
+    background-color: #333;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    margin-right: 1rem;
+}
+
+input[type="search"] {
+    max-width: 130px;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.fa-search {
+    display: none;
+}
+
+/* Showcase Styles */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.showcase img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.showcase-content {
+    background-color: #333;
+    opacity: 0.9;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+ }
+
+.showcase-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.showcase-title {
+    font-size: 1.25rem;
+    border-right: 2px solid #fff;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.showcase-info {
+    font-size: 1.125rem;
+    min-width: 400px;
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.showcase-2 .showcase-info, 
+.showcase-3 .showcase-info, 
+.showcase-4 .showcase-info, 
+.showcase-5 .showcase-info {
+    max-width: 800px;
+}
+
+/* Playstation */
+.playstation {
+    padding: 8rem 0;
+}
+
+.playstation .col-1 {
+    width: 60%;
+}
+
+.playstation .col-2 {
+    width: 37%;
+}
+
+.playstation-info {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.fa-arrow-right {
+    margin-right: 0.5rem;
+}
+
+/* Games */
+.games {
+    margin: 4rem 0 6rem 0;
+}
+
+.games .container-flex {
+    align-items: flex-start;
+}
+
+.game {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+.game img, .game-title {
+    margin-bottom: 0.5rem;
+}
+
+.game-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.release-date {
+    font-size: 0.8rem;
+}
+
+ /* Playstation Experiences */
+ .playstation-experiences {
+    margin: 4rem 0 6rem 0;
+ }
+
+ .playstation-experiences .col {
+    width: 30%;
+ }
+
+ .playstation-experiences .col-3 {
+    align-self: flex-end;
+}
+
+.playstation-experiences img {
+    margin-bottom: 2rem;
+}
+
+/* Digital */
+.digital {
+    margin: 6rem 0;
+}
+
+.digital .col {
+    width: 25%;
+}
+
+/* Footer */
+.footer {
+    background-color: #0070cc;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 1.5rem 1rem;
+}
+
+.main-footer-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer-item {
+    list-style: none;
+    margin-right: 1rem;
+    border-right: 1px solid #fff;
+    padding-right: 0.7rem;
+}
+
+.main-footer-item:last-child {
+    border: none;
+}
+
+.footer .nav-link {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer-bottom, .copyright {
+    padding-left: 1rem;
+}
+
+.footer-bottom .icon {
+    margin-right: 1rem;
+}
+
+.footer-bottom .col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .col-2 {
+    margin-left: auto;
+}
+
+.footer-text, .copyright {
+    color: #fff;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+}
+
+.footer-text {
+    margin-right: 5rem;
+}
+
+/* Media Queries */
+@media (max-width: 1230px) {
+    .main-nav .nav-link {
+        font-size: 0.75rem;
+    }
+
+    #search {
+        display: none;
+    }
+
+    .fa-search {
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .showcase-1 img {
+        min-height: 350px;
+    }
+
+    .game {
+        width: 20%;
+    }
+
+    .main-footer-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .btn {
+        display: block;
+        text-align: center;
+    }
+
+    .ps-btn {
+        display: none;
+    }
+
+    .btn-sign-in {
+        padding: 0.4rem;
+    }
+
+    .showcase-content {
+        display: block;
+        padding: 1.5rem;
+     }
+     
+     .showcase-wrapper {
+         display: block;
+         padding: 0;
+     }
+
+     .showcase-title {
+        border: none;
+        padding: 0;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .showcase-info {
+        padding: 0;
+        margin-bottom: 1rem;
+        max-width: 550px;
+    }
+
+    .showcase-2 .showcase-info, 
+    .showcase-3 .showcase-info, 
+    .showcase-4 .showcase-info, 
+    .showcase-5 .showcase-info {
+        max-width: 600px;
+    }
+
+    .showcase-button .btn-primary, .showcase-button .btn-secondary  {
+        padding: 0.8rem 0;
+    }
+    
+    .playstation .container-flex, 
+    .playstation-experiences .container-flex,
+    .digital .container-flex {
+         display: block;
+     }
+
+    .playstation .col-1 {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .playstation .col-2 {
+        width: 100%;
+    }
+
+    .game {
+        width: 30%;
+    }
+
+    .playstation-experiences .col, .digital .col {
+        width: 95%;
+        margin: 0 auto 3rem auto;
+     }
+    
+     .playstation-experiences .btn-secondary, .digital .btn-secondar {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+     .footer-top {
+        border: none;
+        padding: 1.5rem 0.5rem 0.7rem 0.7rem;
+    }
+
+     .footer .logo {
+         display: none;
+     }
+
+     .footer-bottom {
+        padding: 0rem 1.5rem 0.7rem 0.7rem;    
+    }
+
+     .footer-text:last-child {
+         display: none;
+     }
+}
+
+@media (max-width: 700px) {
+    .main-header {
+        align-items: center;
+    }
+
+    .mobile-nav {
+        display: block;
+        margin-right: 0.5rem;
+        order: -2;
+    }
+
+    .main-nav {
+        flex: 0;
+    }
+
+    .logo {
+      order: 1;
+      margin-left: auto;
+    }
+
+    .main-nav-item {
+        display: none;
+    }
+
+    .button {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .btn-sign-in {
+        background-color: #fff;
+        color: #0070cc;
+        font-weight: bold;
+    }
+
+    .fa-search {
+        order: -1;
+    }
+
+    .game {
+        width: 45%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .showcase-info {
+        min-width: 250px;
+    }
+
+    .playstation {
+        min-width: 300px;
+    }
+
+    .playstation .accent{
+        font-size: 0.7rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .playstation-info {
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom .icon {
+        display: none;
+    }
+
+    .footer-bottom .col-2 {
+        margin: 1rem 0;
+    }
+}
